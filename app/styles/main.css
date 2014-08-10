@@ -1,0 +1,49 @@
+html {
+  position: relative;
+  height: 100%; }
+
+body {
+  height: 100%;
+  min-height: 100%;
+  /* margin-bottom = footer height if it exist*/
+  margin-bottom: 60px;
+  font-family: 'Nixie One',Helvetica,serif; }
+
+a {
+  text-decoration: none; }
+  a:visited {
+    color: inherit; }
+
+#container {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%; }
+
+header {
+  padding: 20px;
+  box-shadow: 0px -1px 100% black;
+  color: black; }
+  header nav {
+    display: block;
+    margin: 0 auto;
+    text-align: center; }
+    header nav a {
+      display: inline-block;
+      margin-right: 30px; }
+      header nav a:last-child {
+        margin-right: 0; }
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center; }
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
