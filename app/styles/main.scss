@@ -7,10 +7,11 @@ html {
 body {
     height: 100%;
     min-height: 100%;
-    /* margin-bottom = footer height if it exist*/
-    margin-bottom: 60px;
-
     font-family: 'Nixie One',Helvetica,serif;
+
+    &.clean{
+        color: #777;
+    }
 }
 
 a{
@@ -18,18 +19,22 @@ a{
     &:visited{
         color: inherit;
     }
+
+    body.clean &{
+        color: #555;
+    }
 }
 
 #container{
     min-height: 100%;
     height: auto !important;
     height: 100%;
+    padding-bottom: 60px;
+    box-sizing: border-box;
 }
 
 header{
-    padding: 20px;
-    box-shadow: 0px -1px 100% black;
-    color: black;
+    box-shadow: 0px 1px 5px #CCC; 
 
     nav{
         display: block;
@@ -40,8 +45,20 @@ header{
             display: inline-block;
             margin-right: 30px;
 
+            body.clean &{
+                font-size: 21px;
+            }
+
             &:last-child{
                 margin-right: 0;
+            }
+
+            &.logo{
+                position: relative;
+
+                img{
+                    position: absolute;
+                }
             }
         }
     }
@@ -55,6 +72,10 @@ footer {
     width: 100%;
     padding: 20px 0;
     text-align: center;
+
+    body.clean &{
+        box-shadow: 0px -1px 3px #CCC;
+    }
 }
 
 .browsehappy {

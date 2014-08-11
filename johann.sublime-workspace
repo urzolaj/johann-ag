@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"fon",
+				"font-size"
+			],
+			[
 				"vi",
 				"visibility"
 			],
@@ -27,8 +31,17 @@
 			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 3631,
+				"buffer_size": 3124,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/clean.html",
+			"settings":
+			{
+				"buffer_size": 478,
+				"line_ending": "Unix",
+				"name": "div.wrapper"
 			}
 		},
 		{
@@ -43,7 +56,7 @@
 			"file": "app/styles/main.scss",
 			"settings":
 			{
-				"buffer_size": 988,
+				"buffer_size": 1302,
 				"line_ending": "Unix"
 			}
 		}
@@ -80,9 +93,10 @@
 	},
 	"file_history":
 	[
+		"/Users/Alejandro/Documents/johann-ag/.editorconfig",
+		"/Users/Alejandro/Documents/johann-ag/package.json",
 		"/Users/Alejandro/Documents/johann-ag/app/styles/look.css",
 		"/Users/Alejandro/Documents/johann-ag/bower.json",
-		"/Users/Alejandro/Documents/johann-ag/package.json",
 		"/Users/Alejandro/Documents/johann-ag/Gruntfile.js",
 		"/Users/Alejandro/Documents/johann-ag/index.html",
 		"/Users/Alejandro/Documents/johann-ag/css/look.css",
@@ -105,6 +119,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"server",
+			"&",
 			"relative",
 			"relaitive",
 			"server",
@@ -138,7 +154,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -146,15 +162,15 @@
 					"file": "app/index.html",
 					"settings":
 					{
-						"buffer_size": 3631,
+						"buffer_size": 3124,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2289,
-								2289
+								2766,
+								2766
 							]
 						],
 						"settings":
@@ -162,13 +178,40 @@
 							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 442.0,
+						"translation.y": 349.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "app/clean.html",
+					"settings":
+					{
+						"buffer_size": 478,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								478,
+								478
+							]
+						],
+						"settings":
+						{
+							"auto_name": "div.wrapper",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "Gruntfile.js",
 					"settings":
 					{
@@ -179,8 +222,8 @@
 						"selection":
 						[
 							[
-								5535,
-								5535
+								5533,
+								5533
 							]
 						],
 						"settings":
@@ -189,26 +232,26 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 2226.0,
+						"translation.x": 14.0,
+						"translation.y": 2190.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "app/styles/main.scss",
 					"settings":
 					{
-						"buffer_size": 988,
+						"buffer_size": 1302,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								820,
-								820
+								321,
+								321
 							]
 						],
 						"settings":
@@ -218,7 +261,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 417.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

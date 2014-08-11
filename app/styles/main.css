@@ -5,24 +5,26 @@ html {
 body {
   height: 100%;
   min-height: 100%;
-  /* margin-bottom = footer height if it exist*/
-  margin-bottom: 60px;
   font-family: 'Nixie One',Helvetica,serif; }
+  body.clean {
+    color: #777; }
 
 a {
   text-decoration: none; }
   a:visited {
     color: inherit; }
+  body.clean a {
+    color: #555; }
 
 #container {
   min-height: 100%;
   height: auto !important;
-  height: 100%; }
+  height: 100%;
+  padding-bottom: 60px;
+  box-sizing: border-box; }
 
 header {
-  padding: 20px;
-  box-shadow: 0px -1px 100% black;
-  color: black; }
+  box-shadow: 0px 1px 5px #CCC; }
   header nav {
     display: block;
     margin: 0 auto;
@@ -30,8 +32,14 @@ header {
     header nav a {
       display: inline-block;
       margin-right: 30px; }
+      body.clean header nav a {
+        font-size: 21px; }
       header nav a:last-child {
         margin-right: 0; }
+      header nav a.logo {
+        position: relative; }
+        header nav a.logo img {
+          position: absolute; }
 
 footer {
   position: absolute;
@@ -41,6 +49,8 @@ footer {
   width: 100%;
   padding: 20px 0;
   text-align: center; }
+  body.clean footer {
+    box-shadow: 0px -1px 3px #CCC; }
 
 .browsehappy {
   margin: 0.2em 0;
