@@ -21,7 +21,7 @@
 	<!-- CSS
   ================================================== -->
   	<link rel="stylesheet" href="styles/reset.min.css">
-  	<link href='http://fonts.googleapis.com/css?family=Nixie+One|Poiret+One|Flamenco:300,400' rel='stylesheet' type='text/css'>
+  	<link href='http://fonts.googleapis.com/css?family=Rajdhani:300,600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="styles/main.css">
 	<link rel="stylesheet" href="styles/look.css">
 
@@ -37,17 +37,24 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="images/icn/apple-touch-icon-114x114.png">
 
 </head>
-<body>
+<body class="clean">
 	<div id="container">
 		<header>
 			<nav id="main-nav">
-				<a href="#" class="active" rel="nav-bio">Bio</a>
-				<a href="#" rel="nav-work">Work</a>
-				<a href="#" id="logo" title="Reload the Awesomeness" ><img src="http://carrot.is/img/case_studies/drafted_in_glass/verge-logo.png" alt="Johann Garrido"></a>
-				<a href="#" rel="nav-work">Demos</a>
-				<a href="#" rel="nav-work">Contact</a>
+				<a href="#" class="active" rel="nav-bio"><span></span>About me</a>
+				<a href="#" rel="nav-work"><span></span>Work</a>
+				<a href="#" id="logo" title="Reload the Awesomeness" >
+					<img src="" alt="Johann Garrido">
+				</a>
+				<a href="#" rel="nav-work"><span></span>Demos</a>
+				<a href="#" rel="nav-work"><span></span>Contact</a>
 			</nav>
 		</header>
+		<div id="content">
+			<div class="wrapper">
+				
+			</div>
+		</div>
 	</div>
 	<footer>
 		<p>View Source Code for more References - 2014</p>
@@ -56,28 +63,30 @@
 	
 <!-- JavaScripts
 ================================================== -->
-<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="../bower_components/jQuery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
 <script>
-if(typeof jQuery=='undefined'){document.write(unescape("%3Cscript src='scripts/jquery-2.1.1.min.js'%3E%3C/script%3E"));}
+	$("#content > .wrapper").load("clean.html");
+	$("#logo img").attr("src","images/misc/logo-"+$("body").attr("class")+".png");
+	
+	$("#main-nav a:not(#logo)").click(function(){
+		$("#main-nav a:not(#logo)").removeClass("active");
+		$(this).addClass("active");
+	});
 </script>
-<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<!--<script>
-if(typeof jQuery=='undefined'){document.write(unescape("%3Cscript src='scripts/jquery-ui-1.10.3.custom.min'%3E%3C/script%3E"));}
-</script>-->
-<!--[if lt IE 7]>
+
+<!--[if lt IE 8]>
   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script>
-	(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-	function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-	e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-	e.src='//www.google-analytics.com/analytics.js';
-	r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-	ga('create','UA-XXXXX-X');ga('send','pageview');
-</script>
-<script src="scripts/prefixfree.min.js"></script>
-<script src="scripts/script.js"></script>
+
+<!-- build:js({app,dist}) scripts/main.js -->
+<!-- <script src="scripts/script.js"></script> -->
+<!-- endbuild -->
 
 </body>
 </html>

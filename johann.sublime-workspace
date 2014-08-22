@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"pa",
+				"pad	padding"
+			],
+			[
 				"vi",
 				"visibility"
 			],
@@ -27,15 +31,7 @@
 			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 3631,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Gruntfile.js",
-			"settings":
-			{
-				"buffer_size": 13321,
+				"buffer_size": 3124,
 				"line_ending": "Unix"
 			}
 		},
@@ -43,7 +39,7 @@
 			"file": "app/styles/main.scss",
 			"settings":
 			{
-				"buffer_size": 988,
+				"buffer_size": 1487,
 				"line_ending": "Unix"
 			}
 		}
@@ -80,6 +76,13 @@
 	},
 	"file_history":
 	[
+		"/Library/WebServer/Documents/johann-ag/johann.sublime-project",
+		"/Users/Alejandro/Documents/johann-ag/app/index.html",
+		"/Users/Alejandro/Server/johann-ag/app/styles/main.scss",
+		"/Users/Alejandro/Server/johann-ag/app/index.html",
+		"/Users/Alejandro/Documents/johann-ag/app/clean.html",
+		"/Users/Alejandro/Documents/johann-ag/app/404.html",
+		"/Users/Alejandro/Server/johann-ag/Gruntfile.js",
 		"/Users/Alejandro/Documents/johann-ag/app/styles/look.css",
 		"/Users/Alejandro/Documents/johann-ag/bower.json",
 		"/Users/Alejandro/Documents/johann-ag/package.json",
@@ -138,7 +141,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -146,15 +149,15 @@
 					"file": "app/index.html",
 					"settings":
 					{
-						"buffer_size": 3631,
+						"buffer_size": 3124,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2289,
-								2289
+								322,
+								322
 							]
 						],
 						"settings":
@@ -162,53 +165,25 @@
 							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 442.0,
+						"translation.y": 514.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "Gruntfile.js",
-					"settings":
-					{
-						"buffer_size": 13321,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5535,
-								5535
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2226.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "app/styles/main.scss",
 					"settings":
 					{
-						"buffer_size": 988,
+						"buffer_size": 1487,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								820,
-								820
+								1402,
+								1402
 							]
 						],
 						"settings":
@@ -218,7 +193,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 417.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
