@@ -4,8 +4,16 @@
 		"selected_items":
 		[
 			[
+				"bac",
+				"background-color"
+			],
+			[
 				"pa",
-				"pad	padding"
+				"padding"
+			],
+			[
+				"text",
+				"text-transform"
 			],
 			[
 				"vi",
@@ -31,7 +39,7 @@
 			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 3124,
+				"buffer_size": 3787,
 				"line_ending": "Unix"
 			}
 		},
@@ -39,7 +47,23 @@
 			"file": "app/styles/main.scss",
 			"settings":
 			{
-				"buffer_size": 1487,
+				"buffer_size": 8878,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/script.js",
+			"settings":
+			{
+				"buffer_size": 61,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/clean.html",
+			"settings":
+			{
+				"buffer_size": 833,
 				"line_ending": "Unix"
 			}
 		}
@@ -76,6 +100,12 @@
 	},
 	"file_history":
 	[
+		"/Library/WebServer/Documents/johann-ag/app/clean.html",
+		"/Library/WebServer/Documents/johann-ag/Gruntfile.js",
+		"/Users/Alejandro/Downloads/webfontkit-20140817-041955/lekton-regular-demo.html",
+		"/Library/WebServer/Documents/johann-ag/app/styles/fonts/fonts.css",
+		"/Library/WebServer/Documents/johann-ag/app/images/misc/shadow.svg",
+		"/Library/WebServer/Documents/johann-ag/app/styles/main.scss",
 		"/Library/WebServer/Documents/johann-ag/johann.sublime-project",
 		"/Users/Alejandro/Documents/johann-ag/app/index.html",
 		"/Users/Alejandro/Server/johann-ag/app/styles/main.scss",
@@ -108,6 +138,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"fonts",
 			"relative",
 			"relaitive",
 			"server",
@@ -149,15 +180,15 @@
 					"file": "app/index.html",
 					"settings":
 					{
-						"buffer_size": 3124,
+						"buffer_size": 3787,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								322,
-								322
+								0,
+								0
 							]
 						],
 						"settings":
@@ -165,7 +196,7 @@
 							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 514.0,
+						"translation.y": 576.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -175,15 +206,15 @@
 					"file": "app/styles/main.scss",
 					"settings":
 					{
-						"buffer_size": 1487,
+						"buffer_size": 8878,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1402,
-								1402
+								3878,
+								3878
 							]
 						],
 						"settings":
@@ -191,6 +222,58 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 1.0,
+						"translation.y": 2889.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/scripts/script.js",
+					"settings":
+					{
+						"buffer_size": 61,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/clean.html",
+					"settings":
+					{
+						"buffer_size": 833,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
