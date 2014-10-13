@@ -35,38 +35,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/index.html",
-			"settings":
-			{
-				"buffer_size": 3787,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/styles/main.scss",
-			"settings":
-			{
-				"buffer_size": 8878,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/scripts/script.js",
-			"settings":
-			{
-				"buffer_size": 61,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/clean.html",
-			"settings":
-			{
-				"buffer_size": 833,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -100,12 +68,32 @@
 	},
 	"file_history":
 	[
+		"/Library/WebServer/Documents/johann-ag/app/index.html",
 		"/Library/WebServer/Documents/johann-ag/app/clean.html",
+		"/Library/WebServer/Documents/johann-ag/app/styles/main.scss",
+		"/Users/Alejandro/Documents/markuptour/dist/template.html",
+		"/Users/Alejandro/Documents/markuptour/dist/proposal.html",
+		"/Users/Alejandro/Documents/markuptour/dist/proposal-empty.html",
+		"/Users/Alejandro/Documents/markuptour/dist/dashboard.html",
+		"/Users/Alejandro/Documents/markuptour/dist/connect.html",
+		"/Users/Alejandro/Documents/markuptour/dist/connected.html",
+		"/Users/Alejandro/Documents/markuptour/app/proposal-empty.html",
+		"/Users/Alejandro/Documents/markuptour/app/proposal.html",
+		"/Users/Alejandro/Documents/markuptour/app/requestpass.html",
+		"/Users/Alejandro/Documents/markuptour/app/template.html",
+		"/Users/Alejandro/Documents/markuptour/dist/login.html",
+		"/Users/Alejandro/Documents/markuptour/app/login.html",
+		"/Users/Alejandro/Documents/markuptour/app/dashboard.html",
+		"/Users/Alejandro/Documents/markuptour/app/connected.html",
+		"/Users/Alejandro/Documents/markuptour/app/connect.html",
+		"/Users/Alejandro/Documents/markuptour/app/changepass.html",
+		"/Users/Alejandro/Documents/markuptour/dist/changepass.html",
+		"/Library/WebServer/Documents/johann-ag/app/scripts/script.js",
+		"/Users/Alejandro/Documents/markuptour/dist/requestpass.html",
 		"/Library/WebServer/Documents/johann-ag/Gruntfile.js",
 		"/Users/Alejandro/Downloads/webfontkit-20140817-041955/lekton-regular-demo.html",
 		"/Library/WebServer/Documents/johann-ag/app/styles/fonts/fonts.css",
 		"/Library/WebServer/Documents/johann-ag/app/images/misc/shadow.svg",
-		"/Library/WebServer/Documents/johann-ag/app/styles/main.scss",
 		"/Library/WebServer/Documents/johann-ag/johann.sublime-project",
 		"/Users/Alejandro/Documents/johann-ag/app/index.html",
 		"/Users/Alejandro/Server/johann-ag/app/styles/main.scss",
@@ -131,6 +119,8 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"/Users/Alejandro/Documents/markuptour/dist",
+			"/Users/Alejandro/Documents/markuptour"
 		]
 	},
 	"find_state":
@@ -138,6 +128,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<h2>Proposals</h2>",
+			"Base CRM",
+			"itinerary",
+			"ivan",
+			"ivan gazabon",
+			"Ivan Gazabón",
+			"itinerary",
+			"tour itinerary",
+			"load-grunt-tasks",
+			"wrapper",
 			"fonts",
 			"relative",
 			"relaitive",
@@ -162,6 +162,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"<h2>Project</h2>",
+			"Cloud",
+			"Awesome Project"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -172,115 +175,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/index.html",
-					"settings":
-					{
-						"buffer_size": 3787,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 576.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/styles/main.scss",
-					"settings":
-					{
-						"buffer_size": 8878,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3878,
-								3878
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 1.0,
-						"translation.y": 2889.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/scripts/script.js",
-					"settings":
-					{
-						"buffer_size": 61,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/clean.html",
-					"settings":
-					{
-						"buffer_size": 833,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],

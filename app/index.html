@@ -21,6 +21,7 @@
 	<!-- CSS
   ================================================== -->
   	<link rel="stylesheet" href="styles/reset.min.css">
+  	<!-- <link href='http://fonts.googleapis.com/css?family=Rajdhani:300,600|Raleway:300' rel='stylesheet' type='text/css'> -->
   	<link href='http://fonts.googleapis.com/css?family=Rajdhani:300,600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="styles/main.css">
 
@@ -34,28 +35,32 @@
 	<link rel="apple-touch-icon" href="images/icn/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/icn/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/icn/apple-touch-icon-114x114.png">
-
 </head>
 <body class="dark">
 	<div id="container">
 		<header>
 			<nav id="main-nav">
-				<a href="#" class="active" rel="nav-bio"><span></span>About me</a>
-				<a href="#" rel="nav-work"><span></span>Work</a>
-				<a href="#" id="logo" title="Reload the Awesomeness" >
+				<a href="#" class="wait active" rel="about"><span></span>About me</a>
+				<a href="#" class="wait" rel="work"><span></span>Work</a>
+				<a href="#" class="wait" id="logo" title="Reload the Awesomeness" >
 					<img src="" alt="Johann Garrido">
 				</a>
-				<a href="#" rel="nav-work"><span></span>Demos</a>
-				<a href="#" rel="nav-work"><span></span>Contact</a>
+				<a href="#" class="wait" rel="demos"><span></span>Demos</a>
+				<a href="#" class="wait" rel="contact"><span></span>Contact</a>
 			</nav>
 		</header>
 		<div id="content">
 			<div class="wrapper">
-				
+				<div class="col1 wait">
+					<h2>Hello,</h2>
+					<p>I’m a Software Engineer trained in Client Side Programming ​​for Web Apps. Since I graduated from college, I have been learning more about new web technologies to develop my career; because those meet my empirical strengths, like illustration and design, plus the ones I acquired studying.</p>
+					<p>That's why I'm passionated about creating apps with great UX/UI.</p>
+				</div>
+				<img id="photo" src="" alt="Johann Garrido Photo" class="wait">
 			</div>
 		</div>
 	</div>
-	<footer>
+	<footer class="wait">
 		<p>View Source Code for more References - 2014</p>
 	</footer>
 	
@@ -70,12 +75,51 @@
 <!-- endbuild -->
 
 <script>
-	$("#content > .wrapper").load("clean.html");
-	$("#logo img").attr("src","images/misc/logo-"+$("body").attr("class")+".png");
-	
-	$("#main-nav a:not(#logo)").click(function(){
+	$('#logo img').attr('src',"images/misc/logo-"+$("body").attr("class")+".png");
+	$('body').find("#photo").attr("src","images/misc/poly"+$("body").attr("class")+".png");
+
+	// $.ajax({
+	// 		url: url+".html"
+	// 	})
+	// 	.done(function( html ) {
+	// 		$("#content .wrapper").append( html );
+	// 	});
+
+	function loadContent(url){
+	    /* Create the content wrapper and append it to div#contents 
+	       then load the contents to the wrapper 
+	    */ 
+	    $("#content .wrapper").load(url, function(){
+	        /* When the content is completely loaded 
+	           animate the new content from right to left 
+	           also the previous content slide to left and remove afterwards.
+	        */
+	        if (url.indexOf('about') > -1) {
+	        	$('body').find("#photo").attr("src","images/misc/poly"+$("body").attr("class")+".png");
+	        	$(this).find('.wait').animate({right:0}, 'fast');
+	        }
+	        if (url.indexOf('contact') > -1) {
+	        	$(this).find('.wait').animate({top:0}, 'slow');
+	        }
+	        
+	    })
+	}
+
+	$("#main-nav a:not(#logo)").click(function(e){
+		e.preventDefault();
 		$("#main-nav a:not(#logo)").removeClass("active");
 		$(this).addClass("active");
+		$("#content .wrapper").html('');
+		var url = $(this).attr('rel');
+		loadContent(url+".html");
+	});
+
+	$(window).load(function(){
+		$(".wait").removeClass("wait");
+	});
+
+	$(document).ajaxComplete(function (event, xhr, settings) {
+	    $('#content').find('.wait').removeClass('wait');
 	});
 </script>
 
